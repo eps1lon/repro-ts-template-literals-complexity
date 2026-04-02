@@ -22,6 +22,6 @@ Every removed constituent from `DynamicRoutes` halves that time.
 Most of the time is spent in `removeStringLiteralsMatchedByTemplateLiterals` which is doing an O(N) linear scan across all templates.
 We can build up a trie of the templates and do a single pass across the string literals to remove them which reduces complexity.
 
-Using a build with that fix (TODO: include PR link), brings down the time to around 2 seconds.
+Using a build with that fix (https://github.com/microsoft/TypeScript/pull/63343), brings down the time to around 2 seconds.
 
-`tsgo` has the same performance characteristics and the fix can be ported.
+`tsgo` has the same performance characteristics and the fix can be ported (https://github.com/microsoft/typescript-go/pull/3331).
