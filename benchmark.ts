@@ -72,3 +72,4 @@ function Link<RouteType>(href: RouteImpl<RouteType>): void {}
 
 Link("/api/ai-playground/sandbox"); // OK
 Link("/new/~/integrations/vercel/front/billing"); // OK
+Link("/new/~/integrations/vercel/front/billig"); // Bad
