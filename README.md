@@ -23,3 +23,5 @@ Most of the time is spent in `removeStringLiteralsMatchedByTemplateLiterals` whi
 We can build up a trie of the templates and do a single pass across the string literals to remove them which reduces complexity.
 
 Using a build with that fix (TODO: include PR link), brings down the time to around 2 seconds.
+
+`tsgo` has the same performance characteristics and the fix can be ported.
